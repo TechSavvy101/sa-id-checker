@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SA ID Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🇿🇦 SA ID Checker</h1>
+    <form method="POST" action="/check">
+      <label for="sa_id">Enter your 13-digit SA ID Number:</label><br>
+      <input type="text" name="sa_id" maxlength="13" required>
+      <button type="submit">Check Info</button>
+    </form>
+  </div>
+</body>
+</html>

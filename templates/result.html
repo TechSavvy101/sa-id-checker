@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>SA ID Results</h1>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% else %}
+      <p><strong>Date of Birth:</strong> {{ dob }}</p>
+      <p><strong>Gender:</strong> {{ gender }}</p>
+      <p><strong>Age:</strong> {{ age }}</p>
+    {% endif %}
+
+    <a href="/" class="btn">🔙 Try Another</a>
+  </div>
+</body>
+</html>
